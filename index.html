@@ -3,9 +3,25 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link href="css/demo.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="js/demo.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
     </head>
     <body>
-	<h1>hello world</h1>
-	    <h2>我的第一个github成功啦，哈哈哈</h2>
+
+	<h1>项秉铜</h1>
+	<h1>王郑</h1>
+	    <h2>已经相爱 <span id="time"></span></h2>
     </body>
+    <script type="text/javascript">
+    	var together = new Date();
+		together.setFullYear(2018,06,22);
+		together.setHours(22);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		timeElapse(together);
+		setInterval(function () {
+			timeElapse(together);
+		}, 500);
+    </script>
 </html>
